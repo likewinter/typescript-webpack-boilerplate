@@ -1,21 +1,15 @@
-export interface Todo {
+interface Todo {
   done: boolean
   text: string
 }
 
 export type TodoList = Todo[]
 
-export function renderTodoList (list: TodoList, el: HTMLElement) {
-  let html = `
-    <h1>My Todo List</h1>
-    <ul>`
-  list.forEach((task) => {
-    html += `
-    <li class="${task.done ? 'done' : ''}">
-      <span>${task.text}</span>
-    </li>`
+export function renderTodoList (todos: TodoList, el: HTMLElement) {
+  let list = ''
+  todos.forEach((task) => {
+    list += `<li class="${task.done ? 'done' : ''}">${task.text}</li>`
   })
-  html += `</ul>`
 
-  el.innerHTML = html
+  el.innerHTML = `<h1>My Todo List</h1>\n<ul>${list}</ul>`
 }

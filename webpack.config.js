@@ -1,6 +1,4 @@
 const path = require('path')
-const nodeEnv = process.NODE_ENV || 'development'
-const isProd = nodeEnv === 'production'
 
 module.exports = {
   entry: './src/index.js',
@@ -37,7 +35,7 @@ module.exports = {
     ]
   },
   devServer: {
-    contentBase: path.join(__dirname, "dist"),
+    contentBase: path.join(__dirname, 'dist'),
     port: 8000,
     overlay: {
       warnings: true,

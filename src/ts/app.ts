@@ -8,7 +8,7 @@ const list: TodoList = [
     text: 'Make Webpack TypeScript boilerplate'
   }, {
     done: false,
-    text: 'Improve it'
+    text: 'Do something good with it'
   }
 ]
 
