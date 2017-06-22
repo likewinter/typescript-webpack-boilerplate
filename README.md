@@ -1,4 +1,4 @@
-# Dead simple boilerplate for TypeScript development
+# Dead simple boilerplate for TypeScript with Webpack
 
 ### What's Included
 

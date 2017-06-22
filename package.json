@@ -1,7 +1,11 @@
 {
   "name": "typescript-webpack-starter",
   "version": "1.0.0",
-  "description": "TypeScript + Webpack Starter kit",
+  "description": "Dead simple boilerplate for TypeScript with Webpack",
+  "repository": { 
+    "type" : "git",
+    "url" : "https://github.com/likewinter/typescript-webpack-boilerplate.git"
+  },
   "main": "index.js",
   "author": "Anton Orlov <anton@pinked.ru>",
   "license": "MIT",
