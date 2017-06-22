@@ -1,0 +1,25 @@
+{
+  "name": "typescript-webpack-starter",
+  "version": "1.0.0",
+  "description": "TypeScript + Webpack Starter kit",
+  "main": "index.js",
+  "author": "Anton Orlov <anton@pinked.ru>",
+  "license": "MIT",
+  "devDependencies": {
+    "css-loader": "^0.28.4",
+    "file-loader": "^0.11.2",
+    "style-loader": "^0.18.2",
+    "ts-loader": "^2.2.0",
+    "tslint": "^5.4.3",
+    "tslint-config-standard": "^6.0.1",
+    "tslint-loader": "^3.5.3",
+    "typescript": "^2.3.4",
+    "webpack": "^3.0.0",
+    "webpack-dev-server": "^2.5.0"
+  },
+  "scripts": {
+    "start": "webpack-dev-server --hot --inline --open",
+    "dev": "webpack-dev-server --hot --inline --open",
+    "build": "webpack -p"
+  }
+}

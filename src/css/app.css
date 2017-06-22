@@ -1,0 +1,28 @@
+@import './reset.css';
+
+#app {
+  width: 800px;
+  margin: auto;
+  background-color: #CCC;
+  padding: 4rem 2rem;
+}
+
+#app > h1 {
+  font-family: sans-serif;
+  margin-bottom: .5rem;
+}
+
+#app > ul {
+  margin-left: 1.5rem;
+}
+
+#app > ul > li {
+  font-family: monospace;
+  font-size: 1.5em;
+  line-height: 1.5;
+}
+
+#app > ul > li.done {
+  text-decoration: line-through;
+  opacity: 0.5;
+}

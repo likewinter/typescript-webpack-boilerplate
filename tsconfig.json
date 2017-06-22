@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "lib": ["es6", "dom"],
+    "target": "es5"
+  },
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
