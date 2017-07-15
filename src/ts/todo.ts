@@ -6,10 +6,8 @@ interface Todo {
 export type TodoList = Todo[]
 
 export function renderTodoList (todos: TodoList, el: HTMLElement) {
-  let list = ''
-  todos.forEach((task) => {
-    list += `<li class="${task.done ? 'done' : ''}">${task.text}</li>`
-  })
-
-  el.innerHTML = `<h1>My Todo List</h1>\n<ul>${list}</ul>`
+  const list: string[] = todos.map(
+    task => `<li class="${task.done ? 'done' : ''}">${task.text}</li>`
+  )
+  el.innerHTML = `<h1>My Todo List</h1>\n<ul>${list.join('\n')}</ul>`
 }

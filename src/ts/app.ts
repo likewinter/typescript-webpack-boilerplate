@@ -1,4 +1,4 @@
-import {TodoList, renderTodoList} from './todo'
+import { TodoList, renderTodoList } from './todo'
 
 const app = document.getElementById('app')
 
